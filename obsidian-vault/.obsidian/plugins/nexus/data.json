@@ -1,0 +1,83 @@
+{
+  "enabledVault": true,
+  "enableEmbeddings": true,
+  "memory": {},
+  "customPrompts": {
+    "enabled": true,
+    "prompts": []
+  },
+  "llmProviders": {
+    "providers": {
+      "openai": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "anthropic": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "google": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "mistral": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "groq": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "openrouter": {
+        "apiKey": "",
+        "enabled": false,
+        "httpReferer": "",
+        "xTitle": ""
+      },
+      "requesty": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "perplexity": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "openai-codex": {
+        "apiKey": "",
+        "enabled": false
+      },
+      "ollama": {
+        "apiKey": "http://127.0.0.1:11434",
+        "enabled": false,
+        "ollamaModel": ""
+      },
+      "lmstudio": {
+        "apiKey": "http://127.0.0.1:1234",
+        "enabled": false
+      },
+      "webllm": {
+        "apiKey": "",
+        "enabled": false,
+        "webllmModel": "nexus-tools-q4f16",
+        "webllmQuantization": "q4f16"
+      }
+    },
+    "defaultModel": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    },
+    "defaultImageModel": {
+      "provider": "google",
+      "model": "gemini-2.5-flash-image"
+    },
+    "defaultThinking": {
+      "enabled": false,
+      "effort": "medium"
+    },
+    "defaultTemperature": 0.5
+  },
+  "lastUpdateCheckDate": "2026-03-18T21:57:13.573Z",
+  "workflowScheduler": {
+    "lastCheckAt": 1773921965136
+  }
+}
