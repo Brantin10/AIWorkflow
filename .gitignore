@@ -1,0 +1,18 @@
+# Obsidian workspace files (user-specific)
+obsidian-vault/.obsidian/workspace.json
+obsidian-vault/.obsidian/workspace-mobile.json
+obsidian-vault/.obsidian/graph.json
+
+# Cache files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Vault access logs (regenerated)
+obsidian-vault/00-Inbox/.vault-access-log.json
+
+# SQLite databases (don't sync data)
+*.db
+*.db-shm
+*.db-wal
