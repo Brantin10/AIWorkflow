@@ -6,5 +6,41 @@
         "repo": "anthropics/claude-plugins-official"
       }
     }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Python314/python.exe C:/Users/oliver/.claude/hooks/on-session-start.py",
+            "statusMessage": "Loading Obsidian vault context..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Python314/python.exe C:/Users/oliver/.claude/hooks/on-edit.py",
+            "statusMessage": "Tracking file changes in Obsidian..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Python314/python.exe C:/Users/oliver/.claude/hooks/on-stop.py",
+            "statusMessage": "Saving session to Obsidian vault..."
+          }
+        ]
+      }
+    ]
   }
 }
